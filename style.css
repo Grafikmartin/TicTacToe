@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    transform: translateY(-150px); /* Verschiebt den gesamten Inhalt 150px nach oben */
+  background-image: url(./assets/texture-4856104_1920.jpg);
+  background-size: cover;
+  }
+  
+  .tafel {
+    background-image: url(./assets/TAFEL.png);
+    width: 350px;
+    height: 376px;
+    background-size: cover;
+    box-shadow: 3px 5px 6px 0px rgba(0, 0, 0, 0.62);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game-container {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .board {
+    margin-top: 230px;
+    display: grid;
+    grid-template-columns: repeat(3, 70px); /* Zellenbreite angepasst */
+    grid-template-rows: repeat(3, 70px); /* Zellenhöhe angepasst */
+    gap: 10px; /* Abstände zwischen den Zellen */
+    justify-content: center; /* Zentriert das Grid horizontal */
+    align-content: center; /* Zentriert das Grid vertikal */
+  }
+  
+  .cell {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cell img {
+    width: 80%;
+    height: 80%;
+  }
+  
+  #status {
+    font-size: 1.2em;
+    margin: 10px 0; /* Abstand nach oben und unten */
+    text-align: center; /* Zentriert den Text */
+  }
+  
+  button {
+    display: block;
+    margin: 10px auto; /* Zentriert den Button */
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    color: #41403e;
+    cursor: pointer;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+  }
+  
+  button:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+
+  
+  .info {
+    margin-top: 50px;
+    font-size: 1em;
+   
+  }
+  p {
+    color: #fff;
+    font-family: monospace;
+    
+
+  }
+  .wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  a{
+  margin-top: 70px;
+    display: block;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid  rgba(255, 255, 254, 0.5);;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    transition: all .35s;
+    background-color: rgba(255, 255, 254, 0.5);
+    
+  }
+  
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+    border-radius: 15px;
+  }
+  
+  a:hover{
+    color: #fff;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
+  
+  

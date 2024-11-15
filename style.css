@@ -68,7 +68,10 @@
     font-size: 1.2em;
     margin: 10px 0; /* Abstand nach oben und unten */
     text-align: center; /* Zentriert den Text */
-  }
+    color: #fff; /* Weißer Text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Schatteneffekt */
+}
+
   
   button {
     display: block;
@@ -149,7 +152,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #ff003b;
+    background: #af5700;
     transition: all .35s;
     border-radius: 15px;
   }

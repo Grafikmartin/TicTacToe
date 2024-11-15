@@ -11,7 +11,7 @@
     height: 100vh;
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
-    transform: translateY(-150px); /* Verschiebt den gesamten Inhalt 150px nach oben */
+    transform: translateY(-100px); /* Verschiebt den gesamten Inhalt 150px nach oben */
   background-image: url(./assets/texture-4856104_1920.jpg);
   background-size: cover;
   }
@@ -85,7 +85,7 @@
     border-style: solid;
     border-width: 2px;
     box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-    color: #41403e;
+    color: #000000;
     cursor: pointer;
     font-family: Neucha, sans-serif;
     font-size: 1rem;
@@ -93,6 +93,7 @@
     padding: .75rem;
     text-decoration: none;
     transition: all 235ms ease-in-out;
+    font-weight: 800;
   }
   
   button:hover {
